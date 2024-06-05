@@ -1,6 +1,6 @@
 # Toy Language Server
 
-This is a toy language server project that I'm building from scratch without any external dependencies and only using python's stdlib.
+This is a toy project that I'm building from scratch without any external dependencies and only using python's stdlib.
 
 ## Motivation
 
