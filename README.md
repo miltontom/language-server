@@ -17,7 +17,9 @@ In the longrun my goal is to build a language server,
 
 ## Progress
 
-* [ ] Handle basic server lifecycle messages
+* [x] Handle initialization
+* [ ] Handle basic server lifecycle messages  
+. . .
 
 ## Helpful Resources
 
