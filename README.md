@@ -41,7 +41,7 @@ vim.api.nvim_create_autocmd(
     {pattern="markdown", callback=function() vim.lsp.buf_attach_client(0, client) end}
 )
 ```
-When you open a markdown file, you can check if the server is actually up by executing `checkhealth lsp` in `COMMAND` mode (press `:` in `NORMAL` mode)
+When you open a markdown file, you can check if the server is actually up by executing `checkhealth lsp` in `COMMAND` mode (press `:` in `NORMAL` mode). See `%localappdata%\ToyLanguageServer\Log\server.log` for the server logs.
 
 ## Helpful Resources
 
