@@ -1,5 +1,4 @@
 def to_dict(obj):
-    if hasattr(obj, '__dict__'):
-        return {key: to_dict(value) for key, value in obj.__dict__.items()}
-    else:
+    if not hasattr(obj, '__dict__'):
         return obj
+    return {key: to_dict(value) for key, value in obj.__dict__.items()}
