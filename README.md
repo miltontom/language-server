@@ -35,13 +35,13 @@ if not client then
 	return 
 end
 
--- the server will be attached with markdown files, specify the type you want to work with
+-- the server will be attached when a markdown file is opened, specify the type you want to work with
 vim.api.nvim_create_autocmd(
     "FileType",
     {pattern="markdown", callback=function() vim.lsp.buf_attach_client(0, client) end}
 )
 ```
-When you open a markdown file, you can check if the server is actually up by executing `checkhealth lsp` in `COMMAND` mode (press `:` in `NORMAL` mode). See `%localappdata%\ToyLanguageServer\Log\server.log` for the server logs.
+When you open a markdown file, you can check if the server is actually up by executing `checkhealth lsp` in **COMMAND** mode (press colon in **NORMAL** mode). See `%localappdata%\ToyLanguageServer\Log\server.log` for viewing the events and actions the server performs.
 
 ## Helpful Resources
 
